@@ -1,0 +1,14 @@
+homeassistant:
+  name: Home
+  latitude: 40.7128
+  longitude: -74.0060
+  elevation: 10
+  unit_system: imperial
+  time_zone: Asia/Shanghai
+
+zha:
+  usb_path: /dev/ttyACM0
+  database_path: /config/zigbee.db
+
+mqtt:
+  broker: localhost
