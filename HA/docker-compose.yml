@@ -13,3 +13,13 @@ services:
       - /dev/ttyACM0:/dev/ttyACM0
     environment:
       - TZ=Asia/Shanghai
+    depends_on:
+      - mqtt
+
+  mqtt:
+    container_name: mqtt
+    image: eclipse-mosquitto:1.6
+    restart: always
+    network_mode: host
+    volumes:
+      - ./mosquitto:/mosquitto
