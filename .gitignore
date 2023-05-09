@@ -1,1 +1,2 @@
-HA/config
+HA/config/*
+!HA/config/configuration.yaml
